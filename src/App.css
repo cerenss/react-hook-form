@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-div {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 50%;
+  border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#name-div,
+#email-div,
+#radio-div {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+#name-input,
+#email-input {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#radio-div {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.opt {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 1);
+  border: 2px solid black;
+  border-radius: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#success-message {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
+  padding: 10px;
+  margin: 10px;
 }
